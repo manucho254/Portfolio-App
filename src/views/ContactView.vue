@@ -9,7 +9,7 @@ export default {
     <span class="active text-e-lg">CONTACT ME</span>
     <div class="d-flex justify-content-space-around gap-4 flex-wrap">
       <div class="mt-5">
-        <img class="contact-image" src="@/assets/images/short2.png" />
+        <img class="contact-image" src="@/assets/images/short.png" />
       </div>
       <div class="d-flex justify-content-center align-items-end flex-column flex-wrap gap-2">
         <span class="text-lg"> TO GET STARTED </span>
