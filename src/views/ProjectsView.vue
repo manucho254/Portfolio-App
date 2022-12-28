@@ -1,6 +1,18 @@
 <script>
 export default {
   name: "ProjectsView",
+  data: () => {
+    return {
+      projects: [
+        { image: require("../assets/images/short.png"), link: "" },
+        { image: "some image", link: "" },
+        { image: "some image", link: "" },
+        { image: "some image", link: "" },
+        { image: "some image", link: "" },
+        { image: "some image", link: "" },
+      ],
+    };
+  },
 };
 </script>
 
@@ -23,49 +35,15 @@ export default {
     <div
       class="d-flex flex-wrap justify-content-center align-items-center gap-1"
     >
-      <div class="card">
-        <span class="d-flex gap-2">
-          <span class="text-lg">01</span>
-          <span class="rectangle-shape bg-blue"> </span>
-        </span>
-        <span>Coolest of all time</span>
-      </div>
-      <div class="card">
-        <span class="d-flex gap-2">
-          <span class="text-lg">02</span>
-          <span class="rectangle-shape bg-red"></span>
-        </span>
-        <span>Coolest of all time</span>
-      </div>
-      <div class="card">
-        <div class="card">
-          <span class="d-flex gap-2">
-            <span class="text-lg">02</span>
-            <span class="rectangle-shape bg-red"></span>
-          </span>
-          <span>Coolest of all time</span>
-        </div>
-      </div>
-      <div class="card">
-        <span class="d-flex gap-2">
-          <span class="text-lg">01</span>
-          <span class="rectangle-shape bg-blue"> </span>
-        </span>
-        <span>Coolest of all time</span>
-      </div>
-      <div class="card">
-        <span class="d-flex gap-2">
-          <span class="text-lg">02</span>
-          <span class="rectangle-shape bg-red"></span>
-        </span>
-        <span>Coolest of all time</span>
-      </div>
-      <div class="card">
-        <span class="d-flex gap-2">
-          <span class="text-lg">02</span>
-          <span class="rectangle-shape bg-red"></span>
-        </span>
-        <span>Coolest of all time</span>
+      <div class="card" v-for="(project, index) in projects" :key="index + 1">
+        <a
+          :href="project.link"
+          class="text-decoration-none"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="image" :src="project.image" alt="project image" />
+        </a>
       </div>
     </div>
   </section>

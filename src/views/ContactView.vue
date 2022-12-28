@@ -15,17 +15,20 @@ export default {
         <img class="contact-image" src="@/assets/images/contact1.jpg" />
       </div>
       <div
-        class="d-flex justify-content-center align-items-end flex-column flex-wrap gap-2"
+        class="d-flex justify-content-center align-items-center flex-column flex-wrap gap-2"
       >
-        <span class="text-lg"> TO GET STARTED </span>
-        <form class="d-flex flex-column gap-2">
+        <span class="p-2 text-lg">I'm available for work get in touch.</span>
+        <a class="form-btn" href="mailto:manuchoadero@gmail.com">
+          SEND ME A MESSAGE
+        </a>
+        <!-- <form class="d-flex flex-column gap-2">
           <input class="form-input" type="text" placeholder="NAME" required />
           <input class="form-input" type="text" placeholder="EMAIL" required />
           <textarea class="form-input" placeholder="MESSAGE"></textarea>
           <div class="d-flex justify-content-end">
             <button class="form-btn" type="submit">SEND ME A MESSAGE</button>
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
   </section>
