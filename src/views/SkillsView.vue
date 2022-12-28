@@ -2,7 +2,8 @@
   <section id="skills" class="d-flex flex-column gap-4 mt-5">
     <div class="d-flex justify-content-space-around gap-3 flex-wrap mb-4">
       <div>
-        <span class="section-title">My
+        <span class="section-title"
+          >My
           <span class="text-pink-red">Skills</span>
           <span class="horizontal-line"></span>
         </span>

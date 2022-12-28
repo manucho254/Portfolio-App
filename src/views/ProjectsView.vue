@@ -20,7 +20,9 @@ export default {
         </p>
       </div>
     </div>
-    <div class="d-flex flex-wrap justify-content-center align-items-center gap-1">
+    <div
+      class="d-flex flex-wrap justify-content-center align-items-center gap-1"
+    >
       <div class="card">
         <span class="d-flex gap-2">
           <span class="text-lg">01</span>
