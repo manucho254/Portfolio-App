@@ -4,7 +4,7 @@ export default {
   data: () => {
     return {
       projects: [
-        { image: require("../assets/images/short.png"), link: "" },
+        { image: require("../assets/images/coding2.jpg"), link: "" },
         { image: "some image", link: "" },
         { image: "some image", link: "" },
         { image: "some image", link: "" },
