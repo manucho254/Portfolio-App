@@ -1,5 +1,4 @@
 <script>
-
 export default {
   name: "NavBar",
   data: () => {
@@ -7,22 +6,21 @@ export default {
       activeLink: "",
     };
   },
-  mounted: () => {
-  },
+  mounted: () => {},
   methods: {
     getActive(linkName) {
       this.activeLink = linkName;
     },
-    showNavItems () {
+    showNavItems() {
       let navItemsList = document.querySelector(".nav-items");
-      let arr = navItemsList.classList.value.split(" ")
+      let arr = navItemsList.classList.value.split(" ");
 
       if (arr.includes("responsive-nav")) {
         navItemsList.classList.remove("responsive-nav");
-      }else{
+      }else {
         navItemsList.classList.add("responsive-nav");
       }
-    }
+    },
   },
 };
 </script>
@@ -61,7 +59,7 @@ export default {
       >
     </div>
     <div class="nav-burger display-none" @click="showNavItems">
-      <img src="@/assets/images/burger.svg" alt="burger-icon">
+      <img src="@/assets/images/burger.svg" alt="burger-icon" />
     </div>
   </div>
 </template>
