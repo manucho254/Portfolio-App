@@ -13,7 +13,7 @@ export default {
   <div>
     <section
       id="home"
-      class="section-home d-flex justify-content-space-around flex-wrap mb-5 pb-5"
+      class="section-home d-flex justify-content-space-around flex-wrap mb-3 pb-3"
     >
       <div
         class="d-flex flex-column justify-content-center align-items-start flex-wrap gap-2"

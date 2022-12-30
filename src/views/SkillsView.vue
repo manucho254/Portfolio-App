@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-  <section id="skills" class="d-flex flex-column gap-4 mt-5">
+  <section id="skills" class="d-flex flex-column gap-4">
     <div class="d-flex justify-content-space-around gap-3 flex-wrap mb-4">
       <div>
         <span class="section-title"

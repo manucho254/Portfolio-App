@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 * {
   margin: 0px;
   padding: 0px;
@@ -7,6 +5,7 @@
 }
 
 body {
+  margin: 0px;
   background-color: rgb(3, 2, 34);
   color: #fff;
   font-family: "Times New Roman", Times, serif;
@@ -36,6 +35,9 @@ section::before {
 
 .nav-items {
   padding-right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item {
@@ -551,13 +553,44 @@ textarea {
   max-width: 400px;
 }
 
+.nav-burger {
+  cursor: pointer;
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
+  body {
+    margin: 0px;
+  }
+
+  .nav {
+    background-color: #3b384f;
+    padding: 10px;
+  }
+
   .nav-header {
-    padding: 0px;
+    padding: 10px;
+  }
+
+  .nav-burger {
+    display: block;
   }
 
   .nav-items {
-    gap: 15px;
+    display: none;
+  }
+
+  .responsive-nav {
+    position: absolute;
+    right: 0;
+    top: 69px;
+    background-color: #3b384f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 
   .section-home {
