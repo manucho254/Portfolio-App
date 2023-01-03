@@ -21,14 +21,16 @@ export default {
     <div class="d-flex justify-content-space-around gap-3 flex-wrap mb-4">
       <div class="d-flex text-center flex-column align-items-center gap-3">
         <div class="d-flex flex-column gap-3">
-          <span class="section-title text-pink-red">
+          <span
+            class="section-title text-pink-red animate__animated animate__fadeInDown"
+          >
             PRO<span class="text-light">JECTS</span>
           </span>
           <span class="horizontal-line w-300"></span>
         </div>
         <p>
-          I thrive in building software testing cool I thrive in building
-          software testing cool I thrive in building software testing cool
+          I thrive at building software and problem solving , below are some of
+          my works.
         </p>
       </div>
     </div>

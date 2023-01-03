@@ -9,9 +9,13 @@ export default {
     id="contact"
     class="d-flex align-items-center flex-column gap-4 align-items-center mt-5"
   >
-    <span class="active text-e-lg">CONTACT ME</span>
+    <span class="active text-e-lg text-center"
+      >CONTACT
+      <span class="text-light">ME</span>
+      <span class="horizontal-line w-300"></span>
+    </span>
     <div class="d-flex justify-content-space-around gap-4 flex-wrap">
-      <div class="mt-5">
+      <div class="mt-5 animate__animated animate__fadeInDown">
         <img class="contact-image" src="@/assets/images/contact1.jpg" />
       </div>
       <div

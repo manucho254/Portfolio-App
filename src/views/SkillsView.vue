@@ -32,14 +32,16 @@ export default {
   <section id="skills" class="d-flex flex-column gap-4 mt-5">
     <div class="d-flex justify-content-space-around gap-3 flex-wrap mb-4">
       <div>
-        <span class="section-title"
+        <span class="section-title animate__animated animate__fadeInDown"
           >My
           <span class="text-pink-red">Skills</span>
           <span class="horizontal-line"></span>
         </span>
 
         <div class="d-flex flex-column">
-          <span class="d-flex flex-column gap-1 mt-3">
+          <span
+            class="d-flex flex-column gap-1 mt-3 animate__animated animate__fadeInLeftBig"
+          >
             <h3>
               Programming languages:
               <span class="text-pink-red">Python, Javascript, C</span>
@@ -58,7 +60,7 @@ export default {
           </span>
         </div>
       </div>
-      <div class="image-container-2 mt-4">
+      <div class="image-container-2 mt-4 animate__animated animate__fadeInDown">
         <img
           class="image"
           src="@/assets/images/coding2.jpg"
@@ -66,7 +68,7 @@ export default {
         />
       </div>
     </div>
-    <div class="d-flex flex-wrap gap-2 justify-content-space-around mt-3">
+    <div class="d-flex flex-wrap gap-2 justify-content-space-around mt-3 mb-4">
       <div
         class="d-flex flex-column gap-2"
         v-for="(skill, index) in skills"

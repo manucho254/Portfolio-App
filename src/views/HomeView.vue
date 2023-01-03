@@ -16,7 +16,7 @@ export default {
       class="section-home d-flex justify-content-space-around flex-wrap mb-3 pb-3"
     >
       <div
-        class="d-flex flex-column justify-content-center align-items-start flex-wrap gap-2"
+        class="d-flex flex-column justify-content-center align-items-start flex-wrap gap-2 animate__animated animate__fadeInLeftBig"
       >
         <span class="title"
           >Emmanuel
@@ -50,7 +50,7 @@ export default {
           /></a>
         </div>
       </div>
-      <div class="image-container-1">
+      <div class="image-container-1 animate__animated animate__fadeInDown">
         <img
           class="image"
           src="@/assets/images/manucho.jpg"
