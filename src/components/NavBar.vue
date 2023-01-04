@@ -9,19 +9,25 @@ export default {
   mounted: () => {},
   methods: {
     getActive(linkName) {
+      let navItemsList = document.querySelector(".nav-items");
+      let section = document.querySelector("section");
+      let arr = navItemsList.classList.value.split(" ");
+      if (arr.includes("responsive-nav")) {
+        navItemsList.classList.remove("responsive-nav");
+        section.classList.remove("mt-150");
+      }
       this.activeLink = linkName;
     },
     showNavItems() {
       let navItemsList = document.querySelector(".nav-items");
-      let sectionHome = document.querySelector(".section-home");
+      let section = document.querySelector("section");
       let arr = navItemsList.classList.value.split(" ");
-
       if (arr.includes("responsive-nav")) {
         navItemsList.classList.remove("responsive-nav");
-        sectionHome.classList.remove("mt-150");
+        section.classList.remove("mt-150");
       } else {
         navItemsList.classList.add("responsive-nav");
-        sectionHome.classList.add("mt-150");
+        section.classList.add("mt-150");
       }
     },
   },
