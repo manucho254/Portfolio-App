@@ -598,7 +598,6 @@ textarea {
     flex-direction: column-reverse;
     align-items: center;
     gap: 50px;
-    margin-top: 0px;
     padding-top: 10px;
   }
 
@@ -653,6 +652,9 @@ textarea {
 
   .contact-image {
     max-width: 330px;
+  }
+  .mt-150 {
+    margin-top: 150px;
   }
 }
 

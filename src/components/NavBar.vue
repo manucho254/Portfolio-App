@@ -13,12 +13,15 @@ export default {
     },
     showNavItems() {
       let navItemsList = document.querySelector(".nav-items");
+      let sectionHome = document.querySelector(".section-home");
       let arr = navItemsList.classList.value.split(" ");
 
       if (arr.includes("responsive-nav")) {
         navItemsList.classList.remove("responsive-nav");
-      }else {
+        sectionHome.classList.remove("mt-150");
+      } else {
         navItemsList.classList.add("responsive-nav");
+        sectionHome.classList.add("mt-150");
       }
     },
   },

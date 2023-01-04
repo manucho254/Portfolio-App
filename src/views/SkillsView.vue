@@ -75,11 +75,11 @@ export default {
         :key="index + 1"
       >
         <span class="d-flex gap-2">
-          <span class="text-lg">0{{ index + 1 }}</span>
+          <span class="text-lg"> 0{{ index + 1 }} </span>
           <span class="rectangle-shape" :class="skill.color">
-            <span class="text-lg text-black text-bold p-1">{{
-              skill.text
-            }}</span>
+            <span class="text-lg text-black text-bold">
+              {{ skill.text }}
+            </span>
           </span>
         </span>
         <span class="skill-message">{{ skill.message }}</span>
