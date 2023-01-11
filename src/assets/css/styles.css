@@ -12,32 +12,34 @@ body {
   font-size: 15px;
 }
 
-.nav {
-  padding: 20px;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 30px;
 }
 
-section::after {
-  content: "";
-  margin-bottom: 20px;
-}
-
-section::before {
-  content: "";
-  margin-top: 20px;
-}
-
-.nav-header {
-  cursor: pointer;
-  font-size: 25px;
-  font-weight: bold;
-  padding-left: 70px;
+.navbar a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-items {
-  padding-right: 70px;
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 25px;
+}
+
+.navbar .nav-toggler {
+  display: none;
+}
+
+.nav-logo {
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .nav-item {
@@ -54,15 +56,18 @@ section::before {
   color: rgb(219, 169, 105);
 }
 
-.nav-sticky {
-  top: 0px;
-  width: 100%;
-  position: fixed;
-  background-color: #d64ca1;
-}
-
 .active {
   color: rgb(219, 169, 105);
+}
+
+section::after {
+  content: "";
+  margin-bottom: 10px;
+}
+
+section::before {
+  content: "";
+  margin-top: 10px;
 }
 
 .section-title {
@@ -137,8 +142,7 @@ section::before {
 
 .contact-me {
   width: 300px;
-  border-width: 2px;
-  border-style: solid;
+  border: solid 2px;
   cursor: pointer;
   border-image: linear-gradient(
       to right top,
@@ -264,7 +268,7 @@ section::before {
 
 .rectangle-shape {
   display: block;
-  width: 300px;
+  width: 270px;
   height: 100px;
 }
 
@@ -511,6 +515,7 @@ section::before {
   width: 380px;
   height: 350px;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .card .image {
@@ -550,12 +555,7 @@ textarea {
 
 .skill-message {
   text-align: center;
-  max-width: 400px;
-}
-
-.nav-burger {
-  cursor: pointer;
-  display: none;
+  max-width: 350px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -563,42 +563,11 @@ textarea {
     margin: 0px;
   }
 
-  .nav {
-    background-color: #3b384f;
-    padding: 10px;
-  }
-
-  .nav-header {
-    padding: 10px;
-  }
-
-  .nav-burger {
-    display: block;
-  }
-
-  .nav-items {
-    display: none;
-  }
-
-  .responsive-nav {
-    position: absolute;
-    right: 0;
-    top: 69px;
-    background-color: #3b384f;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
   .section-home {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 50px;
-    padding-top: 10px;
   }
 
   .title {
@@ -653,8 +622,34 @@ textarea {
   .contact-image {
     max-width: 330px;
   }
-  .mt-150 {
-    margin-top: 150px;
+
+  .navbar {
+    padding-top: 10px;
+  }
+
+  .nav-menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar .nav-toggler {
+    display: block;
+    padding: 5px;
+    border: none;
+    background-color: inherit;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .mx-height {
+    margin-top: 10px;
+    height: 100%;
   }
 }
 

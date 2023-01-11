@@ -9,25 +9,15 @@ export default {
   mounted: () => {},
   methods: {
     getActive(linkName) {
-      let navItemsList = document.querySelector(".nav-items");
-      let section = document.querySelector("section");
-      let arr = navItemsList.classList.value.split(" ");
-      if (arr.includes("responsive-nav")) {
-        navItemsList.classList.remove("responsive-nav");
-        section.classList.remove("mt-150");
-      }
       this.activeLink = linkName;
     },
     showNavItems() {
-      let navItemsList = document.querySelector(".nav-items");
-      let section = document.querySelector("section");
-      let arr = navItemsList.classList.value.split(" ");
-      if (arr.includes("responsive-nav")) {
-        navItemsList.classList.remove("responsive-nav");
-        section.classList.remove("mt-150");
+      let menu = document.querySelector(".nav-menu");
+
+      if (menu.classList.contains("mx-height")) {
+        menu.classList.remove("mx-height");
       } else {
-        navItemsList.classList.add("responsive-nav");
-        section.classList.add("mt-150");
+        menu.classList.add("mx-height");
       }
     },
   },
@@ -35,40 +25,38 @@ export default {
 </script>
 
 <template>
-  <div class="nav d-flex align-items-center justify-content-space-between">
-    <div class="nav-header">ME</div>
-    <div class="nav-items gap-3">
-      <a
-        href="#"
-        class="nav-item"
-        @click="getActive('home')"
-        :class="{ active: activeLink === 'home' }"
-        >Home</a
-      >
-      <a
-        href="#skills"
-        class="nav-item"
-        @click="getActive('skills')"
-        :class="{ active: activeLink === 'skills' }"
-        >Skills</a
-      >
-      <a
-        href="#projects"
-        class="nav-item"
-        @click="getActive('projects')"
-        :class="{ active: activeLink === 'projects' }"
-        >Projects</a
-      >
-      <a
-        href="#contact"
-        class="nav-item"
-        @click="getActive('contact')"
-        :class="{ active: activeLink === 'contact' }"
-        >Contact</a
-      >
-    </div>
-    <div class="nav-burger display-none" @click="showNavItems">
+  <div class="navbar">
+    <div class="nav-logo">MANUCHO</div>
+    <button class="nav-toggler" @click="showNavItems">
       <img src="@/assets/images/burger.svg" alt="burger-icon" />
+    </button>
+    <div class="nav-menu gap-3">
+      <ul class="nav-items">
+        <li
+          @click="getActive('home')"
+          :class="{ active: activeLink === 'home' }"
+        >
+          <a href="#" class="nav-item">Home</a>
+        </li>
+        <li
+          @click="getActive('skills')"
+          :class="{ active: activeLink === 'skills' }"
+        >
+          <a href="#skills" class="nav-item">Skills</a>
+        </li>
+        <li
+          @click="getActive('projects')"
+          :class="{ active: activeLink === 'projects' }"
+        >
+          <a href="#projects" class="nav-item">Projects</a>
+        </li>
+        <li
+          @click="getActive('contact')"
+          :class="{ active: activeLink === 'contact' }"
+        >
+          <a href="#contact" class="nav-item">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
