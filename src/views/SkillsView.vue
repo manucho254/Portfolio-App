@@ -30,7 +30,7 @@ export default {
 
 <template>
   <section id="skills" class="d-flex flex-column gap-4">
-    <div class="d-flex justify-content-space-around gap-3 flex-wrap mb-4">
+    <div class="d-flex justify-content-space-around flex-wrap mb-4">
       <div>
         <span class="section-title animate__animated animate__fadeInDown"
           >My
@@ -68,13 +68,13 @@ export default {
         />
       </div>
     </div>
-    <div class="d-flex flex-wrap gap-2 justify-content-space-around mt-3 mb-4">
+    <div class="d-flex flex-wrap justify-content-space-around mt-3 mb-4">
       <div
         class="d-flex flex-column gap-2"
         v-for="(skill, index) in skills"
         :key="index + 1"
       >
-        <span class="d-flex gap-2">
+        <span class="d-flex gap-1">
           <span class="text-lg"> 0{{ index + 1 }} </span>
           <span class="rectangle-shape" :class="skill.color">
             <span class="text-lg text-black text-bold">

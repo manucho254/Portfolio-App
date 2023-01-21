@@ -4,12 +4,16 @@ export default {
   data: () => {
     return {
       projects: [
-        { image: require("../assets/images/coding2.jpg"), link: "" },
-        { image: "some image", link: "" },
-        { image: "some image", link: "" },
-        { image: "some image", link: "" },
-        { image: "some image", link: "" },
-        { image: "some image", link: "" },
+        {
+          image: require("../assets/images/ecomvision.png"),
+          name: "Ecomvision Dashboard",
+          link: "https://ecomvisiondashboard.netlify.app/",
+        },
+        { image: "", name: "", link: "" },
+        { image: "", name: "", link: "" },
+        { image: "", name: "", link: "" },
+        { image: "", name: "", link: "" },
+        { image: "", name: "", link: "" },
       ],
     };
   },
@@ -37,16 +41,34 @@ export default {
     <div
       class="d-flex flex-wrap justify-content-center align-items-center gap-1"
     >
-      <div class="card" v-for="(project, index) in projects" :key="index + 1">
+      <div
+        class="card text-dark px-2"
+        v-for="(project, index) in projects"
+        :key="index + 1"
+      >
         <a
           :href="project.link"
           class="text-decoration-none"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="image" :src="project.image" alt="project image" />
+          <span>{{ project.name }}</span>
+          <span v-if="project.image">
+            <img class="image" :src="project.image" alt="project image" />
+          </span>
+          <span  v-else>
+            Coming soon
+          </span>
         </a>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+a {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>

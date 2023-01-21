@@ -142,24 +142,9 @@ section::before {
 
 .contact-me {
   width: 300px;
-  border: solid 2px;
+  border: solid 1px white;
   cursor: pointer;
-  border-image: linear-gradient(
-      to right top,
-      #6b99d1,
-      #7297d9,
-      #7d95df,
-      #8b91e4,
-      #9b8de7,
-      #bd88e1,
-      #db82d6,
-      #f47ec6,
-      #ff82a5,
-      #ff9285,
-      #ffa96b,
-      #fbc25f
-    )
-    1;
+  border-radius: 30px;
 }
 
 .contact-me button {
@@ -181,6 +166,7 @@ section::before {
     #ffa96b,
     #fbc25f
   );
+  border-radius: 30px 0px 0px 30px;
 }
 
 .contact-me a {
