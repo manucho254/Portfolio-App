@@ -56,9 +56,7 @@ export default {
           <span v-if="project.image">
             <img class="image" :src="project.image" alt="project image" />
           </span>
-          <span  v-else>
-            Coming soon
-          </span>
+          <span v-else> Coming soon </span>
         </a>
       </div>
     </div>
