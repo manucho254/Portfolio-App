@@ -37,6 +37,7 @@ body {
 }
 
 .nav-logo {
+  padding-left: 100px;
   cursor: pointer;
   font-size: 25px;
   font-weight: bold;
@@ -631,6 +632,10 @@ textarea {
     background-color: inherit;
     align-items: center;
     cursor: pointer;
+  }
+
+  .nav-logo {
+    padding-left: 0;
   }
 
   .mx-height {
