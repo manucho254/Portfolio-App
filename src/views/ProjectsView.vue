@@ -1,7 +1,7 @@
 <script>
 export default {
   name: "ProjectsView",
-  data: () => {
+  data() {
     return {
       projects: [
         {
@@ -64,6 +64,9 @@ export default {
 </template>
 
 <style scoped>
+.card {
+  background-color: rgb(206, 206, 206);
+}
 a {
   color: black;
   font-size: 20px;

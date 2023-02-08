@@ -1,15 +1,19 @@
 <script>
+import { mapGetters, mapMutations } from "vuex";
+
 export default {
   name: "NavBar",
-  data: () => {
-    return {
-      activeLink: "",
-    };
+  data() {
+    return {};
   },
-  mounted: () => {},
+  computed: {
+    ...mapGetters({ activeLink: "getActiveLink" }),
+  },
   methods: {
+    ...mapMutations({ UpdateActiveLink: "UpdateActiveLink" }),
     getActive(linkName) {
-      this.activeLink = linkName;
+      this.UpdateActiveLink(linkName);
+      window.scrollTo(1000, 1000);
     },
     showNavItems() {
       let menu = document.querySelector(".nav-menu");

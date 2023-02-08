@@ -6,9 +6,9 @@
 
 body {
   margin: 0px;
-  background-color: rgb(3, 2, 34);
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(25, 9, 57);
+  color: #c4c4c4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
 }
 
@@ -39,7 +39,9 @@ body {
 .nav-logo {
   padding-left: 100px;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -59,6 +61,7 @@ body {
 
 .active {
   color: rgb(219, 169, 105);
+  border-bottom: 2px solid rgb(219, 169, 105);
 }
 
 section::after {
@@ -68,7 +71,7 @@ section::after {
 
 section::before {
   content: "";
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -98,7 +101,7 @@ section::before {
 }
 
 .image-container-2 {
-  width: 600px;
+  width: 500px;
   height: 200px;
   border: 2px solid rgb(110, 138, 213);
 }
@@ -129,6 +132,10 @@ section::before {
   font-size: 30px;
 }
 
+.text-25 {
+  font-size: 25px;
+}
+
 .text-e-lg {
   font-size: 40px;
 }
@@ -151,23 +158,9 @@ section::before {
 .contact-me button {
   border: none;
   width: 150px;
-  padding: 10px;
-  background-image: linear-gradient(
-    to right top,
-    #6b99d1,
-    #7297d9,
-    #7d95df,
-    #8b91e4,
-    #9b8de7,
-    #bd88e1,
-    #db82d6,
-    #f47ec6,
-    #ff82a5,
-    #ff9285,
-    #ffa96b,
-    #fbc25f
-  );
-  border-radius: 30px 0px 0px 30px;
+  padding: 15px;
+  background-color: #d64ca1;
+  border-radius: 25px 0px 0px 25px;
 }
 
 .contact-me a {
@@ -183,26 +176,7 @@ section::before {
 }
 
 .bg-gradient {
-  width: 150px;
-  height: 60px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 25px 15px 20px 5px;
-  background-image: linear-gradient(
-    to right top,
-    #6b99d1,
-    #7297d9,
-    #7d95df,
-    #8b91e4,
-    #9b8de7,
-    #bd88e1,
-    #db82d6,
-    #f47ec6,
-    #ff82a5,
-    #ff9285,
-    #ffa96b,
-    #fbc25f
-  );
+  color: #d64ca1;
 }
 
 .text-pink-red {
@@ -226,7 +200,7 @@ section::before {
 }
 
 .text-max {
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .text-decoration-none {
@@ -242,7 +216,7 @@ section::before {
 }
 
 .bg-yellow {
-  background-color: yellow;
+  background-color: rgb(185, 185, 117);
 }
 
 .bg-pink-red {
@@ -255,16 +229,14 @@ section::before {
 
 .rectangle-shape {
   display: block;
-  width: 270px;
+  width: 250px;
   height: 100px;
+  border-radius: 5px;
 }
 
 .horizontal-line {
   width: 150px;
   height: 2px;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
   background-image: linear-gradient(
     to right top,
     #6b99d1,
@@ -280,6 +252,7 @@ section::before {
     #ffa96b,
     #fbc25f
   );
+  border-radius: 30px 0px 0px 30px;
 }
 
 .d-flex {
@@ -542,7 +515,7 @@ textarea {
 
 .skill-message {
   text-align: center;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 @media only screen and (max-width: 600px) {
