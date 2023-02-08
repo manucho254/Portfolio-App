@@ -30,7 +30,9 @@ export default {
 
 <template>
   <div class="navbar">
-    <div class="nav-logo">MANUCHO</div>
+    <div class="nav-logo">
+      <router-link to="/">Manucho</router-link>
+    </div>
     <button class="nav-toggler" @click="showNavItems">
       <img src="@/assets/images/burger.svg" alt="burger-icon" />
     </button>

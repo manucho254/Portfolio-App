@@ -34,9 +34,9 @@ export default {
           corporations.
         </p>
         <div class="contact-me d-flex gap-4 align-items-center">
-          <button>Contact me</button>
           <router-link to="contact" @click="UpdateActiveLink('contact')">
-            <span>Let's talk</span>
+            <button>Contact me</button>
+            <span class="p-3">Let's talk</span>
           </router-link>
         </div>
         <div class="socials">
