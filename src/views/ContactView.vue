@@ -9,7 +9,7 @@ export default {
     id="contact"
     class="d-flex align-items-center flex-column gap-4 align-items-center mt-5"
   >
-    <span class="active text-e-lg text-center"
+    <span class="active text-e-lg text-center animate__animated animate__fadeInDown"
       >CONTACT
       <span class="text-light">ME</span>
       <span class="horizontal-line w-300"></span>

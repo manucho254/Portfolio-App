@@ -29,10 +29,12 @@ export default {
       this.loading = !this.loading;
     });
   },
+
 };
 </script>
 
 <style scoped>
+
 .page-loader {
   width: 16px;
   height: 16px;

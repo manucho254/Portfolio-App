@@ -7,13 +7,17 @@ export default {
     return {};
   },
   computed: {
-    ...mapGetters({ activeLink: "getActiveLink" }),
+    ...mapGetters({
+      activeLink: "getActiveLink",
+    }),
   },
   methods: {
-    ...mapMutations({ UpdateActiveLink: "UpdateActiveLink" }),
+    ...mapMutations({
+      updateActiveLink: "updateActiveLink",
+    }),
     getActive(linkName) {
-      this.UpdateActiveLink(linkName);
-      window.scrollTo(1000, 1000);
+      window.scrollTo(0, 0);
+      this.updateActiveLink(linkName);
     },
     showNavItems() {
       let menu = document.querySelector(".nav-menu");
