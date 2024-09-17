@@ -9,7 +9,11 @@ export default {
           name: "Ecomvision Dashboard",
           link: "https://ecomvisiondashboard.netlify.app/",
         },
-        { image: "", name: "", link: "" },
+        {
+          image: require("../assets/images/ecomvision.png"),
+          name: "Barbola Construction",
+          link: "https://www.barbola.org",
+        },
         { image: "", name: "", link: "" },
         { image: "", name: "", link: "" },
         { image: "", name: "", link: "" },
