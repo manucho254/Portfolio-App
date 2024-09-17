@@ -10,7 +10,7 @@ export default {
           link: "https://ecomvisiondashboard.netlify.app/",
         },
         {
-          image: require("../assets/images/ecomvision.png"),
+          image: require("../assets/images/barbola.png"),
           name: "Barbola Construction",
           link: "https://www.barbola.org",
         },
