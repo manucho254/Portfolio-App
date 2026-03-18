@@ -3,17 +3,13 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// css imports
+// Tailwind CSS
 import "@/assets/css/styles.css";
-
-// third party css imports
-import "animate.css";
 
 const app = createApp(App);
 
-// setting the page title 
 router.beforeEach((to) => {
-  document.title = `Manucho || ${to.name}`;
+  document.title = `Emmanuel Adero | ${to.name || 'Portfolio'}`;
 });
 
 app.use(store);
