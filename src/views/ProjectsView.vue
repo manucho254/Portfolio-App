@@ -14,9 +14,21 @@ export default {
           name: "Barbola Construction",
           link: "https://www.barbola.org",
         },
-        { image: "", name: "", link: "" },
-        { image: "", name: "", link: "" },
-        { image: "", name: "", link: "" },
+        {
+          image: require("../assets/images/afrimechanix (1).png"),
+          name: "Afrimechanix",
+          link: "",
+        },
+        {
+          image: require("../assets/images/afrimechanix (2).png"),
+          name: "Afrimechanix",
+          link: "",
+        },
+        {
+          image: require("../assets/images/afrimechanix (3).png"),
+          name: "Afrimechanix",
+          link: "",
+        },
         { image: "", name: "", link: "" },
       ],
     };
