@@ -90,7 +90,7 @@ export default {
         {
           role: 'Software Developer',
           company: 'My Bidhaa',
-          period: '02/2025 – Present',
+          period: '02/2026 – Present',
           type: 'Full-time',
           description: 'Design and develop scalable full-stack applications using Django and React, supporting both web and mobile platforms.',
           achievements: [
